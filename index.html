@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#FDEBD0">
+<title>Become a Bike Pink Captain | Rapido</title>
+<meta name="description" content="Turn your daily commute into daily income. Become a Bike Pink captain on Rapido. Onboard online in 5 minutes.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --yellow: #FFC20E;
+    --maroon: #8E1245;
+    --pink: #C2185B;
+    --navy: #1C1B4B;
+    --body: #4A4A6A;
+    --white: #FFFFFF;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  html, body { min-height: 100%; }
+  body {
+    font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, Arial, sans-serif;
+    background: linear-gradient(180deg, #FFF0CC 0%, #FCE6DC 35%, #F9D6E6 75%, #F6C6DD 100%);
+    background-attachment: fixed;
+    color: var(--navy);
+    display: flex;
+    justify-content: center;
+    padding-top: env(safe-area-inset-top, 0px);
+  }
+  .page-link {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .page-link:focus-visible { outline: 3px solid var(--navy); outline-offset: -3px; }
+  .page {
+    width: 100%;
+    max-width: 480px;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 36px 18px calc(28px + env(safe-area-inset-bottom, 0px));
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Headline */
+  .headline { margin-bottom: 4px; }
+  .headline .pill {
+    display: inline-block;
+    background: var(--yellow);
+    color: var(--maroon);
+    font-weight: 700;
+    font-size: clamp(24px, 7.6vw, 36px);
+    line-height: 1.15;
+    padding: 10px 14px 12px;
+    border-radius: 10px;
+    transform: rotate(-0.6deg);
+    letter-spacing: -0.3px;
+  }
+  .headline .sub {
+    margin-top: 12px;
+    font-weight: 700;
+    font-size: clamp(26px, 8vw, 40px);
+    line-height: 1.15;
+    color: var(--navy);
+    letter-spacing: -0.3px;
+  }
+  .headline .sub span { color: var(--pink); }
+
+  /* Hero badge */
+  .hero { display: flex; flex-direction: column; align-items: center; margin-top: 18px; }
+  .hero svg { width: min(78%, 330px); height: auto; display: block; }
+  .tag { text-align: center; margin-top: -4px; line-height: 1; }
+  .tag .big { color: var(--pink); font-weight: 700; font-size: clamp(32px, 10vw, 46px); letter-spacing: 0.5px; }
+  .tag .small { color: var(--navy); font-weight: 700; font-size: clamp(18px, 5.4vw, 26px); margin-top: 4px; }
+
+  /* Feature cards */
+  .features { list-style: none; margin-top: 18px; display: grid; gap: 12px; }
+  .card {
+    background: var(--white);
+    border-radius: 18px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 6px 18px rgba(194, 24, 91, 0.10);
+  }
+  .icon {
+    flex: 0 0 auto;
+    width: 52px; height: 52px;
+    border-radius: 50%;
+    background: var(--yellow);
+    display: grid; place-items: center;
+  }
+  .icon svg { width: 26px; height: 26px; stroke: var(--navy); fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  .card h2 { color: var(--pink); font-size: clamp(16px, 4.8vw, 20px); font-weight: 700; line-height: 1.25; }
+  .card p { color: var(--body); font-size: clamp(12.5px, 3.6vw, 14.5px); line-height: 1.4; margin-top: 2px; }
+
+  /* CTA */
+  .cta-wrap { margin-top: auto; padding-top: 22px; }
+  .cta {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--pink);
+    color: var(--white);
+    text-decoration: none;
+    border-radius: 18px;
+    padding: 16px 20px;
+    box-shadow: 0 5px 0 var(--maroon);
+    transition: transform .12s ease, box-shadow .12s ease;
+  }
+  .cta:active { transform: translateY(4px); box-shadow: 0 1px 0 var(--maroon); }
+  .cta .phone { flex: 0 0 auto; width: 30px; height: 40px; }
+  .cta .divider { width: 1px; align-self: stretch; background: rgba(255,255,255,0.35); }
+  .cta .label { flex: 1; font-weight: 600; font-size: clamp(16px, 4.8vw, 20px); line-height: 1.2; }
+  .cta .arrow { flex: 0 0 auto; width: 30px; height: 30px; stroke: var(--yellow); fill: none; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+
+  @media (prefers-reduced-motion: reduce) { .cta { transition: none; } }
+  @media (min-width: 600px) { .page { padding-top: 48px; } }
+</style>
+</head>
+<body>
+<a class="page-link" href="https://rapido-captain.onelink.me/cpM4/umgft8ib" rel="noopener" aria-label="Become a Bike Pink captain: download the Captain app">
+<main class="page">
+
+  <header class="headline">
+    <h1>
+      <span class="pill">Turn your daily commute</span>
+      <span class="sub" style="display:block">into <span>daily income</span></span>
+    </h1>
+  </header>
+
+  <section class="hero" aria-label="Women for women">
+    <svg viewBox="0 0 460 460" role="img" aria-label="Two women riding a Rapido scooter">
+      <circle cx="230" cy="230" r="218" fill="#C2185B"/>
+      <circle cx="230" cy="230" r="203" fill="#FFC20E"/>
+      <circle cx="230" cy="236" r="157" fill="#FFD23F"/>
+      <!-- skyline -->
+      <g fill="none" stroke="#E8A800" stroke-width="2">
+        <path d="M60 340 H400"/>
+        <rect x="108" y="282" width="28" height="58"/>
+        <path d="M170 340 V300 Q230 250 290 300 V340"/>
+        <rect x="300" y="276" width="34" height="64"/>
+      </g>
+      <!-- hearts & sparkles -->
+      <path d="M118 128c-9-9-22 3-12 12l12 11 12-11c10-9-3-21-12-12z" fill="#EC3F6E" transform="translate(0,-8)"/>
+      <path d="M330 150c-8-8-19 3-10 11l10 10 10-10c9-8-2-19-10-11z" fill="#EC3F6E" transform="translate(-4,-12)"/>
+      <path d="M358 108v16M350 116h16" stroke="#C2185B" stroke-width="3" stroke-linecap="round"/>
+      <path d="M86 214v14M79 221h14" stroke="#C2185B" stroke-width="3" stroke-linecap="round"/>
+      <!-- scooter body -->
+      <path d="M120 318 Q150 290 215 292 L300 296 Q336 300 340 318 Q330 340 300 342 L150 342 Q118 338 120 318Z" fill="#C2185B"/>
+      <path d="M300 296 L322 220" stroke="#1C1B4B" stroke-width="7" stroke-linecap="round"/>
+      <path d="M312 218 H348" stroke="#1C1B4B" stroke-width="8" stroke-linecap="round"/>
+      <rect x="346" y="208" width="18" height="12" rx="2" fill="#fff" transform="rotate(-12 355 214)"/>
+      <!-- rear rider (pink helmet, yellow top) -->
+      <path d="M142 238 Q140 210 176 204 Q212 206 214 240 L214 318 L150 318Z" fill="#FFB400"/>
+      <circle cx="178" cy="184" r="28" fill="#E6967A"/>
+      <path d="M146 188 Q144 150 180 148 Q214 150 212 188 L196 184 Q178 176 160 186Z" fill="#EC3F6E"/>
+      <path d="M170 192 q8 6 16 0" stroke="#7A3B12" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <rect x="156" y="300" width="42" height="38" rx="6" fill="#3F5C9B"/>
+      <!-- front rider (yellow helmet, maroon top) -->
+      <path d="M222 244 Q222 206 258 200 Q290 204 294 232 L284 318 L228 318Z" fill="#C2185B"/>
+      <path d="M262 216 L282 230" stroke="#E6967A" stroke-width="12" stroke-linecap="round"/>
+      <path d="M270 222 L314 214" stroke="#E6967A" stroke-width="12" stroke-linecap="round"/>
+      <rect x="238" y="214" width="40" height="30" rx="3" fill="#FBE8EE" transform="rotate(-8 258 229)"/>
+      <circle cx="258" cy="180" r="28" fill="#E6967A"/>
+      <path d="M228 184 Q226 146 258 144 Q292 146 290 184 L274 180 Q258 172 242 182Z" fill="#FFD23F" stroke="#1C1B4B" stroke-width="2"/>
+      <path d="M250 190 q8 6 16 0" stroke="#7A3B12" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <rect x="236" y="300" width="46" height="38" rx="6" fill="#3F5C9B"/>
+      <!-- brand -->
+      <text x="272" y="334" font-family="Poppins, Arial, sans-serif" font-weight="700" font-size="14" fill="#fff">rapido</text>
+      <!-- wheels -->
+      <circle cx="140" cy="372" r="34" fill="#1C1B4B"/><circle cx="140" cy="372" r="13" fill="#FFC20E"/>
+      <circle cx="322" cy="372" r="34" fill="#1C1B4B"/><circle cx="322" cy="372" r="13" fill="#FFC20E"/>
+    </svg>
+    <div class="tag">
+      <div class="big">WOMEN</div>
+      <div class="small">for women</div>
+    </div>
+  </section>
+
+  <ul class="features">
+    <li class="card">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><circle cx="5.5" cy="17" r="3.5"/><circle cx="18.5" cy="17" r="3.5"/><path d="M5.5 17 9 8h4l3 9M9 8 7.5 5.5H6M13 8l5.5 9M10.5 12.5h5"/></svg>
+      </div>
+      <div>
+        <h2>Become a Bike Pink captain</h2>
+        <p>Ride only women customers. Help other women travel safe.</p>
+      </div>
+    </li>
+    <li class="card">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="m9.5 12 2 2 3.5-4"/></svg>
+      </div>
+      <div>
+        <h2>Online onboarding in 5 minutes</h2>
+        <p>Sign up from the Captain app.</p>
+      </div>
+    </li>
+    <li class="card">
+      <div class="icon" aria-hidden="true">
+        <svg viewBox="0 0 24 24"><ellipse cx="9" cy="6" rx="6" ry="2.5"/><path d="M3 6v5c0 1.4 2.7 2.5 6 2.5M3 11v4c0 1.4 2.7 2.5 6 2.5"/><circle cx="16.5" cy="16.5" r="5"/><path d="M14.5 14.5h4M14.5 16.5h4M15.5 14.5c2 0 2.5 2 0 2.5l2 2.5"/></svg>
+      </div>
+      <div>
+        <h2>Earn extra income</h2>
+        <p>Part-time, whenever it works for you.</p>
+      </div>
+    </li>
+  </ul>
+
+  <div class="cta-wrap">
+    <div class="cta">
+      <svg class="phone" viewBox="0 0 30 40" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="2" y="2" width="26" height="36" rx="5"/><path d="M15 12v14M9.5 21l5.5 5.5 5.5-5.5"/>
+      </svg>
+      <span class="divider" aria-hidden="true"></span>
+      <span class="label">Download Captain app now</span>
+      <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h17M14 5l7 7-7 7"/></svg>
+    </div>
+  </div>
+
+</main>
+</a>
+</body>
+</html>
